@@ -72,6 +72,15 @@ h2#secondHeading{
     position: relative;
 
 }
+div#right {
+    float: left;
+    margin-left: 100px;/*100px*/
+    margin-top: 132px;/*132px*/
+}
+div#left {
+    width: 60%;
+    float: left;
+}
 .text{
 	font-size: 1.5rem;
     flex-wrap: wrap;
@@ -87,8 +96,7 @@ h2#secondHeading{
 	position: relative;
 	box-shadow: 0 0 18px 4px black;/*Image had the only unexpected behaviours*/
 	flex-wrap: wrap;
-	align-items: right;
-	width: 10vw;
+	width: 30vw;
 }
 @media only screen and (max-width: 360px)/*I have used media queries to remove Horizontal scrolling*/
 {
@@ -119,6 +127,12 @@ h2#secondHeading{
     .text2{
     	font-size: 1.5rem;
     }
+    div#right {
+    float: left;
+    width: 90%;
+    margin: 0 10px;/*100px*/
+    /*margin-top: 132px;*//*132px*/
+}
 }
 
 @media only screen and (min-width: 360px) and (max-width: 480px)
@@ -148,6 +162,17 @@ h2#secondHeading{
     .text2{
     	font-size: 1.5rem;
     }
+
+    div#left {
+    /*width: 60%;*/
+    float: unset;
+    }
+
+    div#right {
+    /*float: left;*/
+    width: 90%;
+    margin: 0 10px;/*100px*/
+    
 }
 
 @media only screen and (min-width: 480px) and (max-width: 768px)
@@ -178,7 +203,7 @@ h2#secondHeading{
     }
 }
 
-@media only screen and (min-width: 768px)
+@media only screen and (min-width: 768px) and (max-width: 1024px)
 {
 	.title{
 		font-size: 5rem;
@@ -202,10 +227,10 @@ h2#secondHeading{
     	font-size: 2rem;
     }
     .text{
-	font-size: 1.5rem;
+	font-size: 2rem;
     }
     .text2{
-    	font-size: 1.5rem;
+    	font-size: 2rem;
     }
 }
 
@@ -238,7 +263,7 @@ h2#secondHeading{
 	font-size: 2rem;
     }
     .text2{
-    	font-size: 2rem;
+    font-size: 2rem;
     }
 }
 
